@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXIF Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+
+<body>
+    <h2>EXIF Viewer</h2>
+    <label for="imageInput" class="upload-label">Select Image</label>
+    <input type="file" id="imageInput" accept="image/*">
+    <img id="preview">
+    <div style="margin-top: 10px;">
+        <button id="copyBtn" style="display:none;">Copy Result</button>
+    </div>
+    <pre id="output">이미지를 선택하면 EXIF 데이터가 분석됩니다.<br><br>Select an image to analyze EXIF data.</pre>
+    <script src="script.js"></script>
+</body>
+
+</html>
