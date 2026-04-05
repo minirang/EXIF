@@ -41,6 +41,9 @@ async function processChunked(data, outputElement) {
     copyBtn.onclick = function () {
         navigator.clipboard.writeText(JSON.stringify(data, null, 2)).then(() => {
             alert('Copied!');
+        }).catch((error) => {
+            console.error('Failed to copy: ', error);
+            alert('Failed to copy EXIF data.');
         });
     };
 }
