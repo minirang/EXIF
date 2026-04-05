@@ -58,6 +58,7 @@ document.getElementById("imageInput").addEventListener("change", function (e) {
     const img = document.getElementById("preview");
     const output = document.getElementById("output");
     output.textContent = "Analyzing...";
+    alert("이미지 분석이 시작됩니다.\n큰 이미지의 경우 시간이 오래 걸릴 수 있으며,\n브라우저가 잠시 멈출수 있으나 잠시 기다리시면 해결 됩니다.\n\nImage analysis is starting. For large images,\nit may take some time and the browser might freeze for a moment,\nbut please wait a bit.");
     if (img.src) {
         URL.revokeObjectURL(img.src);
     }
